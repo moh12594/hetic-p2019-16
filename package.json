@@ -1,0 +1,19 @@
+{
+  "name": "hetic-p2019-16",
+  "version": "1.0.0",
+  "description": "Projet développement Front-End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P-Henoch/hetic-p2019-16.git"
+  },
+  "author": "Groupe 16 G2 P2019",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P-Henoch/hetic-p2019-16/issues"
+  },
+  "homepage": "https://github.com/P-Henoch/hetic-p2019-16#readme"
+}
