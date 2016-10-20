@@ -13,7 +13,7 @@ Front-End Development Project
 ## Commit Style
 
 ```
-[Filename]Description
+$ git commit -am "[Filename] Description"
 ```
 
 ## Build With
