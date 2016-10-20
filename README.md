@@ -1,5 +1,5 @@
 # hetic-p2019-16
-Front-End Project Development
+Front-End Development Project 
 
 ## Authors
 
@@ -9,3 +9,15 @@ Front-End Project Development
 * **Boris Goutorbe** - *Designer* - [BorisGoutorbe](https://github.com/BorisGoutorbe)
 * **Philippe Henoch** - *Developer* - [P-Henoch](https://github.com/P-Henoch)
 * **Mohamed Saddat** - *Developer* - [moh12594](https://github.com/moh12594)
+
+## Commit Style
+
+```
+$ git commit -am "[Filename] Description"
+```
+
+## Build With
+
+* [Gulp](https://github.com/gulpjs/gulp) - Automate and enhance your workflow
+* [SASS](https://github.com/sass/sass) - Adds power and elegance to CSS
+* [Compass](https://github.com/Compass/compass) - Framework for [SASS](https://github.com/sass/sass)
