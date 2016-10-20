@@ -10,6 +10,12 @@ Front-End Development Project
 * **Philippe Henoch** - *Developer* - [P-Henoch](https://github.com/P-Henoch)
 * **Mohamed Saddat** - *Developer* - [moh12594](https://github.com/moh12594)
 
+## Commit Style
+
+```
+[Filename]Description
+```
+
 ## Build With
 
 * [Gulp](https://github.com/gulpjs/gulp) - Automate and enhance your workflow
