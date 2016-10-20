@@ -22,7 +22,7 @@ $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 ```
 
-### Prerequisities
+### Coding style
 
 The JavaScript ES6 code style is based on [Airbnb's style guide](https://github.com/airbnb/javascript)
 
