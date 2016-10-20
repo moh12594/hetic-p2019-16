@@ -1,5 +1,5 @@
 # hetic-p2019-16
-Front-End Project Development
+Front-End Development Project 
 
 ## Authors
 
