@@ -1,1 +1,18 @@
-@import 'base/base';
+// Configuration
+
+@import 'conf/colors';
+@import 'conf/mixins';
+@import 'conf/mediaqueries';
+@import 'conf/animations';
+@import 'conf/fonts';
+
+//Global
+@import 'global/layout';
+
+//Header
+@import 'header/header';
+@import 'header/menu';
+
+//Footer
+@import 'footer/footer';
+
