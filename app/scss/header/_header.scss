@@ -1,4 +1,7 @@
 .header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	height: 100vh;
 	background: url(../../app/img/home_small.jpg);
 	background-size: cover;
@@ -11,9 +14,6 @@
 	margin-left: auto;
 }
 .header__presentationContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	text-align: center;
 }
 .header__presentationLogo {
@@ -27,6 +27,7 @@
 	font-size: 1.5em;
 }
 .header__presentationDown {
+	text-align: center;
 	font-size: 2em !important;
 	margin-top: 30%;
 	color: #fff !important;
