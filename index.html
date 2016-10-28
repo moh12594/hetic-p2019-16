@@ -2,14 +2,38 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gopened - Visite Virtuelle à 360°</title>
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" type="text/css" href="app/fontawesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="app/js/script.js"></script>
 </head>
 <body>
 	<header class="header">
-		
+		<div class="header__mobileMenuContainer">
+			<div class="header__mobileMenuIcon">
+  				<span class="header__mobileMenuIconLine"></span>
+  				<span class="header__mobileMenuIconLine"></span>
+  				<span class="header__mobileMenuIconLine"></span>
+  				<span class="header__mobileMenuIconLine"></span>
+  				<span class="header__mobileMenuIconLine"></span>
+  				<span class="header__mobileMenuIconLine"></span>
+			</div>
+		</div>
+		<ul class="header__menu">
+			<li class="header__menuItem"><a class="header__menuItemLink" href="#">Lien 1</a></li>
+			<li class="header__menuItem"><a class="header__menuItemLink" href="#">Lien 2</a></li>
+			<li class="header__menuItem"><a class="header__menuItemLink" href="#">Lien 3</a></li>
+			<li class="header__menuItem"><a class="header__menuItemLink" href="#">Lien 4</a></li>
+		</ul>
+		<div class="header__presentationContainer">
+			<img class="header__presentationLogo" src="app/img/logo_small.png">
+			<h1 class="header__presentationTitle">Agence de photographes<br/> Google Street View</h1>
+			<a href="#stats"><i class="header__presentationDown fa fa-arrow-down"></i></a>
+		</div>
 	</header>
-	<section class="stats">
+	<section class="stats" id="stats">
 
 	</section>
 	<section class="solutions">

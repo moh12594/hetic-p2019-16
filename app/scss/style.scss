@@ -6,11 +6,15 @@
 @import 'conf/animations';
 @import 'conf/fonts';
 
+//Base 
+@import 'base/base';
+
 //Global
 @import 'global/layout';
 
 //Header
 @import 'header/header';
+@import 'header/menuicon';
 @import 'header/menu';
 
 //Footer

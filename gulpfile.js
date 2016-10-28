@@ -8,6 +8,14 @@ var processors = [
 autoprefixer
 ];
 
+gulp.task('jquery', function () {
+    return gulp.src('./node_modules/jquery/src')
+        .pipe(jquery({
+            flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+        }))
+        .pipe(gulp.dest('./public/vendor/'));
+    // creates ./public/vendor/jquery.custom.js 
+});
 gulp.task('scss', function() {
 return gulp.src('app/scss/style.scss')
 .pipe(sass())
@@ -20,6 +28,6 @@ gulp.task('sync', ['scss'], function(){
 		sync.init({
 			server:'./'
 		})
-		gulp.watch("app/scss/**/*.scss", ['scss']);
+		gulp.watch("app/scss/*.scss", ['scss']);
 
 });
