@@ -1,5 +1,5 @@
 # hetic-p2019-16
-Front-End Development Project 
+Front-End Development Project
 
 ## Authors
 
@@ -13,7 +13,7 @@ Front-End Development Project
 ## Commit Style
 
 ```
-$ git commit -am "[Filename] Description"
+$ git commit -am "[Scope] Description"
 ```
 ## Getting started
 
@@ -21,10 +21,11 @@ $ git commit -am "[Filename] Description"
 $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 ```
-
+<!--
 ### Coding style
 
 The JavaScript ES6 code style is based on [Airbnb's style guide](https://github.com/airbnb/javascript)
+-->
 
 ## Build With
 
