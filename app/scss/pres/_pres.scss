@@ -1,0 +1,41 @@
+.pres {
+	font-family: 'Roboto';
+	color: #333;
+	text-align: center;
+	font-weight: 500;
+}
+.pres__presentationContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 25px;
+	text-align: center;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pres__text {
+	margin-top: 25px;
+}
+.pres__presentationPanorama {
+	background: url(../../app/img/pano_small.jpg)repeat-x;
+	background-size: cover;
+	margin-top: 35px;
+}
+.pres__presentationLogo {
+	padding: 20% 0;
+	opacity: 0.8;
+}
+.pres__buttonLink {
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	color: #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor;
+}
