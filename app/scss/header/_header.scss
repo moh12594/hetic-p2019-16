@@ -1,12 +1,12 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	height: auto;
-	background: url(../../app/img/home_small.jpg);
+	background: url(../../app/img/home_medium.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
+	min-height: 300px;
+	max-height: 300px;
 	font-family: 'Roboto';
 }
 .not-display {
@@ -21,6 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 40px;
 	text-align: center;
 	width: 95%;
 	margin-right: auto;

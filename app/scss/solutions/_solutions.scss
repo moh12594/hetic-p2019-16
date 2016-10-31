@@ -1,10 +1,13 @@
-.solutions__clientsContainer {
+.solutions {
 	font-family: 'Roboto';
+	text-align: center;
+}
+.solutions__clientsContainer {
 	display: flex;
-	justify-content : space-around;
+	justify-content : space-between;
 	margin-top: 45px;
 	text-align: center;
-	width: 95%;
+	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -16,19 +19,22 @@
 	margin-top: -20px;
 	color: $orangeColor;
 	font-weight: bold;
-	font-size: 6em;
+	font-size: 90px;
 }
 .solutions_statClientsPourcent {
 	font-size: 0.5em;
 }
 .solutions_statClientsGroup {
-	font-size: 6em !important;
-	color: #333;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 106px;
 }
 .solutions__textClients {
 	color: #333;
+	font-weight: 300;
 	line-height: 1.5;
-	font-size: 1.2em;
+	font-size: 20px;
 	text-align: left;
 }
 .solutions__certifContainer {
@@ -36,8 +42,8 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	font-family: 'Roboto';
 	display: flex;
+	flex-direction: column;
 	margin-top: 50px;
 	color: lighten(#333, 10%);
 	justify-content : space-around;
@@ -47,4 +53,38 @@
 	margin-left: auto;
 	padding-top: 30px;
 	padding-bottom: 15px;
+}
+.solutions__certifLogo {
+	display: block;
+	margin-top: 50px;
+	color: lighten(#333, 10%);
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.solutions__prix {
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 700;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 2;
+	border-bottom: 1px #333 solid;
+}
+.solutions__prixSomme {
+	color: $orangeColor;
+}
+.solutions__buttonLink {
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	color: #fff;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor;
 }
