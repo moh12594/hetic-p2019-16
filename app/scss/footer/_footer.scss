@@ -1,0 +1,26 @@
+.footer {
+				font-family: Roboto;
+				text-align: center;
+				background-color: #757575;
+				padding-bottom: 5px;
+}
+.footer__socialNetwork {
+				padding-top: 20px;
+}
+
+.footer__socialNetworkList {
+				display: inline-block;
+				font-size: 2em;
+				margin-left: 25px;
+				&:first-child {
+					margin-left: 0;
+				}
+}
+.footer__socialNetworkItem {
+				color: #fff;
+				font-size: 2em;
+}
+.footer__copyright {
+				margin-top: 15px;
+				color: #fff;
+}

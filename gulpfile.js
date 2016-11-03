@@ -14,15 +14,15 @@ autoprefixer
 
 gulp.task('scripts', function() {
     return gulp.src('app/js/*.js')
-    .pipe(concat('scripts.js'))
-    .pipe(uglify())
+    //.pipe(concat('scripts.js'))
+    //.pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     .pipe(sync.stream());
 });
 
 gulp.task('vendors', function () {
     return gulp.src('app/lib/jquery.js')
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('dist/public/vendor/'));
 });
 
@@ -30,7 +30,7 @@ gulp.task('scss', function() {
     return gulp.src('app/scss/style.scss')
     .pipe(sass())
     .pipe(postcss(processors))
-    .pipe(mincss())
+    //.pipe(mincss())
     .pipe(gulp.dest('dist/css'))
     .pipe(sync.stream());
 });
