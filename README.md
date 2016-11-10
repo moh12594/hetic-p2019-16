@@ -27,4 +27,5 @@ $ npm install
 
 * [Gulp](https://github.com/gulpjs/gulp) - Automate and enhance your workflow
 * [SASS](https://github.com/sass/sass) - Adds power and elegance to CSS
+* [VR view](https://github.com/googlevr/vrview) - Embed 360 degree VR media
 * [Compass](https://github.com/Compass/compass) - Framework for [SASS](https://github.com/sass/sass)
