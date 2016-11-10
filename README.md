@@ -1,5 +1,5 @@
 # hetic-p2019-16
-Front-End Development Project
+Front-End Development Project available [here](http://mohsadat.com/devprojet/)
 
 ## Authors
 
@@ -9,10 +9,6 @@ Front-End Development Project
 * **Boris Goutorbe** - *Designer* - [BorisGoutorbe](https://github.com/BorisGoutorbe)
 * **Philippe Henoch** - *Developer* - [P-Henoch](https://github.com/P-Henoch)
 * **Mohamed Saddat** - *Developer* - [moh12594](https://github.com/moh12594)
-
-## Project link
-
-[Gopened Front-End project](http://mohsadat.com/devprojet/)
 
 ## Commit Style
 
@@ -24,12 +20,8 @@ $ git commit -am "[Scope] Description"
 ```
 $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
+$ npm install
 ```
-<!--
-### Coding style
-
-The JavaScript ES6 code style is based on [Airbnb's style guide](https://github.com/airbnb/javascript)
--->
 
 ## Build With
 
