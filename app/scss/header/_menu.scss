@@ -1,5 +1,11 @@
 .header__menu {
   display: none;
+  position: absolute;
+  height: auto;
+  
+  @media (min-width: 510px) {
+   font-size: 1.8em;
+  }
 }
 .header__menu.header_menuOpen {
   animation :slide-down .5s;

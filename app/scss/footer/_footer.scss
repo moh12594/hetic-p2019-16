@@ -15,6 +15,9 @@
 	&:first-child {
 		margin-left: 0;
 	}
+	@media (min-width: 510px) {
+		font-size: 3.5em;
+	}
 }
 .footer__socialNetworkItem {
 	color: #fff;
@@ -23,4 +26,7 @@
 .footer__copyright {
 	margin-top: 15px;
 	color: #fff;
+	@media (min-width: 510px) {
+		font-size: 1.5em;
+	}
 }

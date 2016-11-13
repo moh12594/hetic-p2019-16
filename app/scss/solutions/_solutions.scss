@@ -4,12 +4,15 @@
 }
 .solutions__clientsContainer {
 	display: flex;
-	justify-content : space-around;
+	justify-content: space-around;
 	margin-top: 45px;
 	text-align: center;
 	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
+	@media (min-width: 510px) {
+		display:none;	
+	}
 }
 .solutions__stat {
 	display: flex;
@@ -29,6 +32,10 @@
 	margin-right: auto;
 	height: 100px;
 	width: 106px;
+	@media (min-width: 510px) {
+		width: 150px;
+		height: 150px;
+	}
 }
 .solutions__textClients {
 	color: #333;
@@ -46,13 +53,16 @@
 	flex-direction: column;
 	margin-top: 50px;
 	color: lighten(#333, 10%);
-	justify-content : space-around;
+	justify-content: space-around;
 	text-align: center;
 	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 30px;
 	padding-bottom: 15px;
+	@media (min-width: 510px) {
+		display:none;	
+	}
 }
 .solutions__certifLogo {
 	display: block;
@@ -61,6 +71,9 @@
 	width: 60%;
 	margin-right: auto;
 	margin-left: auto;
+	@media (min-width: 510px) {
+		display:none;	
+	}
 }
 .solutions__prix {
 	text-align: center;
@@ -71,6 +84,10 @@
 	margin-left: auto;
 	line-height: 2;
 	border-bottom: 1px #333 solid;
+	@media (min-width: 510px) {
+		margin-top: 0;
+		font-size: 2em;	
+	}
 }
 .solutions__prixSomme {
 	color: $orangeColor;
@@ -81,10 +98,73 @@
 	padding: 10px 20px;
 	border-radius: 8px;
 	color: #fff;
-	width: 50%;
+	width: 60%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 25px;
 	margin-bottom: 30px;
 	background-color: $blueColor;
+	@media (min-width: 510px) {
+		font-size: 2.3em;	
+	}
+}
+
+//Tablette specific
+.solutions__vignette{
+	padding: 1.5em;
+	font-size: 1.4em;
+	margin-top: 5%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 510px) {
+		display:none;	
+	}
+	@media (max-width: 720px) {
+		font-size: 1.25em;
+	}
+	@media (min-width: 1080px) {
+		font-size: 2em;
+	}
+}
+
+.solutions__top{
+	margin-bottom: 5%;
+	justify-content: center;
+	display: flex;
+}
+
+.solutions__container{
+	padding: 0.5em;
+	>.solutions__stat{
+		font-size: 4em;
+		font-weight: 700; 
+		>.solutions__statNumber__left{
+			color: #e84c3d;
+		}
+		>.solutions__statNumber__right{
+			color: #fecb17;
+		}
+		>.solutions__statNumber__bot{
+			color: #518dc8;
+		}
+	}
+}
+
+.solutions__certification{
+	padding: 2em 5em 0em;
+
+	>.solutions__certificationText{
+		padding: 2em;
+		font-size: 1.4em;
+		@media (max-width: 720px) {
+			font-size: 1.6em;
+		}
+		@media (min-width: 1080px) {
+			font-size: 2em;
+		}
+	}
+	@media (max-width: 510px) {
+		display:none;	
+	}
 }
