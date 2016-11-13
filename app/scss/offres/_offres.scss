@@ -11,7 +11,12 @@
 	color: #3f4044;
 	@media (min-width: 510px) {
 		margin-top: 80px;
-		font-size: 40px;
+		font-size: 1.8em;
+	}
+	@media (min-width: 1025px) {
+		margin-top: 2em;
+		font-weight: bold;
+		font-size: 2em;
 	}
 }
 .offres_container {
@@ -36,10 +41,7 @@
 .offres__icon{
 	width: 103px;
 	height: 103px;
-	@media (min-width: 1080px) {
-		width: 140px;
-		height: 140px;
-	}	
+		
 }
 .offres__buttonLink{
 	display: block;
@@ -55,7 +57,12 @@
 	background-color: $blueColor;
 	@media (min-width: 510px) {
 		text-align: center;
-		font-size: 2.3em;
+		width: 35%;
+	}
+	@media (min-width: 1025px) {
+		font-weight: 400;
+		font-size: 1em;
+		width: 15%;
 	}
 }
 
@@ -64,13 +71,14 @@
 .offresTab{
 	margin: 80px 0;
 	font-family: 'Roboto';
+	font-weight: 300;
 	@media (max-width: 510px) {
 		display: none;
 	}
 }
 .offresTab__vignette{
 	margin: 100px 0;
-	font-size: 1.3em;
+	font-size: 1em;
 	display: flex;
 	justify-content: center;
 	>.offresTab__container{
@@ -81,12 +89,21 @@
 
 		>.offresTab__text{
 			padding: 0.5em;
+			font-weight: 300;
+			@media (min-width: 1025px) {
+				padding: 0.5 2em;
+			}
 		}
+		@media (min-width: 1025px) {
+				width: 25%;
+			}
 	}
 	@media (min-width: 900px) {
 		font-size: 1.4em;
 	}
-	@media (min-width: 1080px) {
-		font-size: 1.6em;
-	}	
+	@media (min-width: 1025px) {
+		font-size: 1em;
+		margin: 50px 0;
+	}
+
 }

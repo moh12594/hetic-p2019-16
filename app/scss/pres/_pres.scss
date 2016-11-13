@@ -14,6 +14,12 @@
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
+	@media (min-width: 510px) {
+		width: 50%;	
+	}
+	@media (min-width: 1025px) {
+		width: 35%;	
+	}
 }
 .pres__imgTrusted {
 	margin-right: auto;
@@ -25,6 +31,11 @@
 	@media (min-width: 510px) {
 		font-size: 1.5em;
 	}
+	@media (min-width: 1025px) {
+		margin-top: 50px;
+		font-size: 1.5em;
+	}
+
 }
 .pres__presentationPanorama {
 	background: url(../../app/img/pano_small.jpg)repeat-x;
@@ -51,6 +62,12 @@
 	background-color: $blueColor;
 	@media (min-width: 510px) {
 		padding: 20px 40px;
-		font-size: 2em;
+		font-size: 1.5em;
+	}
+	@media (min-width: 1025px) {
+		padding: 10px 40px;
+		font-weight: 400;
+		font-size: 1em;	
+		width: 15%;
 	}
 }

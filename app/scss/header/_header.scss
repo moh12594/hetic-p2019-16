@@ -16,6 +16,10 @@
 		max-height: 486px;
 
 	}
+	@media (min-width: 1025px) {
+		min-height: auto;
+		max-height: auto;
+	}
 }
 .not-display {
 	display: none;
@@ -37,6 +41,9 @@
 	@media (min-width: 510px) {
 		margin-top: 100px;
 	}
+	@media (min-width: 1025px) {
+		margin-top: 20px;
+	}
 }
 .header__presentationLogoSmall {
 	margin-right: auto;
@@ -54,12 +61,20 @@
 	@media (max-width: 509px) {
 		display: none;
 	}
+	@media (min-width: 1025px) {
+		font-size: 10em;
+		width: auto;
+		height: auto;
+	}
 }
 .header__presentationTitle {
 	color: #fff;
 	font-size: 1.3em;
 	@media (min-width: 510px) {
 		font-size: 1.5em;
+	}
+	@media (min-width: 1025px) {
+		font-size: 2em;	
 	}
 }
 .header__presentationDown {
