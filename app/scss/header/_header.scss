@@ -17,8 +17,10 @@
 
 	}
 	@media (min-width: 1025px) {
-		min-height: auto;
-		max-height: auto;
+		background: url(../../app/img/vv-full1.jpg);
+		background-position: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }
 .not-display {
@@ -33,16 +35,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 40px;
+	margin-top: 20%;
 	text-align: center;
 	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
 		margin-top: 100px;
-	}
-	@media (min-width: 1025px) {
-		margin-top: 20px;
 	}
 }
 .header__presentationLogoSmall {
@@ -62,7 +61,7 @@
 		display: none;
 	}
 	@media (min-width: 1025px) {
-		font-size: 10em;
+		max-width: 300px;
 		width: auto;
 		height: auto;
 	}
@@ -77,9 +76,27 @@
 		font-size: 2em;	
 	}
 }
-.header__presentationDown {
+.header__presentationButton {
 	text-align: center;
-	font-size: 2em !important;
-	margin-top: 30%;
-	color: #fff !important;
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	color: #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor;
+	@media (min-width: 510px) {
+
+	}
+	@media (min-width: 1025px) {
+		margin-top: 10%;
+		padding: 10px 40px;
+		font-weight: 400;
+		font-size: 1em;
+		width: 15%;
+	}
 }

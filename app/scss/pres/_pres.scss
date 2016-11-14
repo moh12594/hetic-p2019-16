@@ -18,13 +18,17 @@
 		width: 50%;
 	}
 	@media (min-width: 1025px) {
-		width: 35%;
+		margin-top: 25px;
+		width: 80%;
 	}
 }
 .pres__imgTrusted {
 	margin-right: auto;
 	margin-left: auto;
 	width: 80%;
+	@media (min-width: 1025px) {
+		width: 35%;
+	}
 }
 .pres__text {
 	margin-top: 25px;
@@ -39,20 +43,28 @@
 	}
 
 }
-.pres__vr {
+.pres__presentationVr {
 	width: 100%;
 	height: 300px;
 	border: none;
+	@media (min-width: 900px) {
+		display: none;
+	}
 }
 .pres__presentationPanorama {
+	display: none;
 	background: url(../../app/img/pano_small.jpg)repeat-x;
-	background-size: cover;
-	min-height: 179px;
-	max-height: 179px;
+	background-size: contain;
+	min-height: 300px;
+	max-height: 300px;
 	margin-top: 35px;
+
+	@media (min-width: 900px) {
+		display: block;
+	}
 }
 .pres__presentationLogo {
-	padding: 10% 0;
+	padding-top: 105px;
 	opacity: 0.8;
 }
 .pres__buttonLink {
