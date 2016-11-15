@@ -32,7 +32,6 @@ $ git submodule init
 $ git submodule update
 $ cd vrview/
 $ git pull origin master
-$ git pull origin master
 $ cd ../
 $ npm install
 ```
