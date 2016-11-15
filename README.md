@@ -30,6 +30,10 @@ $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 $ git submodule init
 $ git submodule update
+$ cd vrview/
+$ git pull origin master
+$ git pull origin master
+$ cd ../
 $ npm install
 ```
 
