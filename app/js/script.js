@@ -1,16 +1,22 @@
 /****
 VR
 ***/
+var vrView;
 window.addEventListener('load', onVrViewLoad)
 function onVrViewLoad() {
-	var vrView = new VRView.Player('#vrview', {
+	vrView = new VRView.Player('#vrview', {
     width: '100%',
     height: 300,
-    image: 'img/vrhetic-converted.jpg',
+    image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
     is_stereo: false,
-    is_autopan_off: true
+    is_autopan_off: true,
   });
 }
+vrView.setContent({
+	image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
+	preview : 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
+	is_autopan_off: true,
+})
 /*****
 VR End
 ******/
