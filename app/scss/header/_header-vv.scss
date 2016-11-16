@@ -1,0 +1,94 @@
+.header--visit {
+	font-family: 'Roboto';
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	background: url(../img/home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 200px;
+	max-height: 200px;
+	@media (min-width: 510px) {
+		background: url(../img/home_medium.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 486px;
+		max-height: 486px;
+
+	}
+	@media (min-width: 1025px) {
+		background: url(../img/vv-full1.jpg);
+		background-position: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+.header__visiteContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 7%;
+	text-align: center;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	@media (min-width: 510px) {
+		margin-top: 100px;
+	}
+}
+.header__visiteLogoSmall {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 250px;
+	@media (min-width: 510px) {
+		display: none;
+	}
+}
+.header__visiteLogoMedium {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 500px;
+	margin-bottom: 15px;
+	@media (max-width: 509px) {
+		display: none;
+	}
+	@media (min-width: 1025px) {
+		max-width: 300px;
+		width: auto;
+		height: auto;
+	}
+}
+.header__visiteTitle {
+	color: #fff;
+	font-size: 1.3em;
+	@media (min-width: 510px) {
+		font-size: 1.5em;
+	}
+	@media (min-width: 1025px) {
+		font-size: 2em;	
+	}
+}
+.header__visiteButton {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	color: #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor;
+	@media (min-width: 510px) {
+
+	}
+	@media (min-width: 1025px) {
+		margin-top: 10%;
+		padding: 10px 40px;
+		font-weight: 400;
+		font-size: 1em;
+		width: 15%;
+	}
+}

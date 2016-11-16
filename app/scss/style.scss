@@ -12,10 +12,13 @@
 //Global
 @import 'global/layout';
 
-//Header
+// Home Header
 @import 'header/header';
 @import 'header/menuicon';
 @import 'header/menu';
+
+// Visite Header
+@import 'header/header-vv';
 
 // Pres
 @import 'pres/pres';
@@ -25,6 +28,9 @@
 
 // Section offres
 @import 'offres/offres';
+
+// Visite-virtuelle Content
+@import 'visite/visite';
 
 //Footer
 @import 'footer/footer';

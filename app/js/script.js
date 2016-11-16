@@ -207,3 +207,12 @@ jQuery.fn.extend({everyTime:function(a,b,c,d){return this.each(function(){jQuery
 				$('#start-button').delay(2000).fadeIn('slow');
 				$( "#start-button" ).delay(1400).animate({ opacity: "show" }, 1000, 'easeInQuad');*/
 		   });
+
+/* Script changement de visite*/
+
+function getVisit1() {
+ 	document.getElementById("vPrincipale").src = 'https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469';
+ }
+function getVisit2() {
+ 	document.getElementById("vPrincipale").src = 'https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479308094689!6m8!1m7!1saX8jlqQ4n29PBJocxgF9nA!2m2!1d48.85188438865296!2d2.42053832730673!3f150.9650123262316!4f-1.4235822150230035!5f0.7820865974627469';
+ }
