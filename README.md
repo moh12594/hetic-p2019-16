@@ -30,6 +30,9 @@ $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 $ npm install
 ```
+## Known issue on the web
+
+* 360° images will have incorrect orientation in iOS Safari
 
 ## Build With
 
