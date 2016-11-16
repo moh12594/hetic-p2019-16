@@ -2,7 +2,6 @@
 VR
 ***/
 var vrView;
-
 var scenes = {
 	salle14: {
 		image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
@@ -10,7 +9,7 @@ var scenes = {
 		hotspots: {
 			couloir: {
 	        pitch: 0,
-	        yaw: 110,
+	        yaw: -93,
 	        radius: 0.05,
 	        distance: 1
 	      },
@@ -22,7 +21,7 @@ var scenes = {
 		hotspots: {
 			salle14: {
 					pitch: 0,
-					yaw: 110,
+					yaw: -100,
 					radius: 0.05,
 					distance: 1
 				},
@@ -35,20 +34,18 @@ function onVrViewLoad() {
     height: 300,
     image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
     is_stereo: true,
-    is_autopan_off: true,
+    is_autopan_off: false,
   });
 
 	vrView.on('ready', onVRViewReady);
 	vrView.on('click', onHotspotClick);
 }
 function onVRViewReady(e) {
-  console.log('onVRViewReady');
   loadScene('salle14');
 }
 function onHotspotClick(e) {
   if (e.id) {
     loadScene(e.id);
-		console.log('click');
   }
 }
 function loadScene(id) {
@@ -57,7 +54,7 @@ function loadScene(id) {
     image: scenes[id].image,
     preview: scenes[id].preview,
     is_stereo: true,
-    is_autopan_off: true
+    is_autopan_off: false,
   });
 
   // Add all the hotspots for the scene
