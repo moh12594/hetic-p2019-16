@@ -2,21 +2,80 @@
 VR
 ***/
 var vrView;
-window.addEventListener('load', onVrViewLoad)
+
+var scenes = {
+	salle14: {
+		image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
+		preview : 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
+		hotspots: {
+			couloir: {
+	        pitch: 0,
+	        yaw: 110,
+	        radius: 0.05,
+	        distance: 1
+	      },
+		}
+	},
+	couloir: {
+		image: 'https://mohsadat.com/devprojet/img/couloir.jpg',
+		preview : 'https://mohsadat.com/devprojet/img/couloir.jpg',
+		hotspots: {
+			salle14: {
+					pitch: 0,
+					yaw: 110,
+					radius: 0.05,
+					distance: 1
+				},
+		}
+	}
+};
 function onVrViewLoad() {
 	vrView = new VRView.Player('#vrview', {
     width: '100%',
     height: 300,
     image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
-    is_stereo: false,
+    is_stereo: true,
     is_autopan_off: true,
   });
+
+	vrView.on('ready', onVRViewReady);
+	vrView.on('click', onHotspotClick);
 }
-vrView.setContent({
-	image: 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
-	preview : 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
-	is_autopan_off: true,
-})
+function onVRViewReady(e) {
+  console.log('onVRViewReady');
+  loadScene('salle14');
+}
+function onHotspotClick(e) {
+  if (e.id) {
+    loadScene(e.id);
+		console.log('click');
+  }
+}
+function loadScene(id) {
+  // Set the image
+  vrView.setContent({
+    image: scenes[id].image,
+    preview: scenes[id].preview,
+    is_stereo: true,
+    is_autopan_off: true
+  });
+
+  // Add all the hotspots for the scene
+  var newScene = scenes[id];
+  var sceneHotspots = Object.keys(newScene.hotspots);
+  for (var i = 0; i < sceneHotspots.length; i++) {
+    var hotspotKey = sceneHotspots[i];
+    var hotspot = newScene.hotspots[hotspotKey];
+
+    vrView.addHotspot(hotspotKey, {
+      pitch: hotspot.pitch,
+      yaw: hotspot.yaw,
+      radius: hotspot.radius,
+      distance: hotspot.distance
+    });
+  }
+}
+window.addEventListener('load', onVrViewLoad);
 /*****
 VR End
 ******/
