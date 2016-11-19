@@ -1,11 +1,24 @@
 {{> head }}
 {{> header-vv }}
 	<section class="visite">
-		<iframe class="visite__visitePrincipale" id="vPrincipale" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<div class="visite__visiteGallery">
-			<img class="visite__visiteGalleryImage" onclick="getVisit1();" src="img/vv1_small.jpg"></img>
-			<img class="visite__visiteGalleryImage" onclick="getVisit2();" src="img/vv2_small.jpg"></img>
+		<div class="visite__visiteContainer">
+			<iframe class="visite__visitePrincipale" id="vPrincipale" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="visite__visiteGallery--small">
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage1" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv1_small.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage2" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479308094689!6m8!1m7!1saX8jlqQ4n29PBJocxgF9nA!2m2!1d48.85188438865296!2d2.42053832730673!3f150.9650123262316!4f-1.4235822150230035!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv2_small.jpg"></img>
+		</div>
+		<div class="visite__visiteGallery--medium">
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage1" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv1_medium.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage3" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479563616227!6m8!1m7!1sZsADyOcPTG4AAAQY_y3ZIg!2m2!1d44.84882670541774!2d-0.5709554756455191!3f66.46596837331855!4f-1.1551472451123743!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv3_medium.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage4" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sus!4v1479564186217!6m8!1m7!1sI3pZ_TP1wZeqx0mNBdjhtQ!2m2!1d44.86691096359482!2d-0.6558294418491641!3f99.37!4f-11.709999999999994!5f0.5970117501821992" onclick="getVisit(this.id);" src="img/vv4_medium.jpg"></img>
 
+		</div>
+		<div class="visite__visiteGallery--large">
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage1" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479307191423!6m8!1m7!1sn_MyMYOnUKS_LiY7EH4oRw!2m2!1d48.86778127104915!2d2.302886187464765!3f79.2956705753835!4f-11.378200785094123!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv1_medium.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage2" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479308094689!6m8!1m7!1saX8jlqQ4n29PBJocxgF9nA!2m2!1d48.85188438865296!2d2.42053832730673!3f150.9650123262316!4f-1.4235822150230035!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv2_medium.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage3" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sfr!4v1479563616227!6m8!1m7!1sZsADyOcPTG4AAAQY_y3ZIg!2m2!1d44.84882670541774!2d-0.5709554756455191!3f66.46596837331855!4f-1.1551472451123743!5f0.7820865974627469" onclick="getVisit(this.id);" src="img/vv3_medium.jpg"></img>
+			<img class="visite__visiteGalleryImage" id="visite__visiteGalleryImage4" data-visite-link="https://www.google.com/maps/embed?pb=!1m0!3m2!1sfr!2sus!4v1479564186217!6m8!1m7!1sI3pZ_TP1wZeqx0mNBdjhtQ!2m2!1d44.86691096359482!2d-0.6558294418491641!3f99.37!4f-11.709999999999994!5f0.5970117501821992" onclick="getVisit(this.id);" src="img/vv4_medium.jpg"></img>
 		</div>
 	</section>
 

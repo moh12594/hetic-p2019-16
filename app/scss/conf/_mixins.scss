@@ -21,3 +21,10 @@
 		width: 15%;
 	}
 }
+
+@mixin visiteGallery {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
