@@ -77,26 +77,5 @@
 	}
 }
 .header__presentationButton {
-	text-align: center;
-	display: block;
-	text-decoration: none;
-	padding: 10px 40px;
-	border-radius: 8px;
-	color: #fff;
-	width: 25%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
-	@media (min-width: 510px) {
-
-	}
-	@media (min-width: 1025px) {
-		margin-top: 10%;
-		padding: 10px 40px;
-		font-weight: 400;
-		font-size: 1em;
-		width: 15%;
-	}
+	@include button;
 }

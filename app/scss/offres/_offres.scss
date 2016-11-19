@@ -81,26 +81,25 @@
 	font-size: 1em;
 	display: flex;
 	justify-content: center;
-	>.offresTab__container{
-		width: 35%;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-
-		>.offresTab__text{
-			padding: 0.5em;
-			font-weight: 300;
-			@media (min-width: 1025px) {
-				padding: 0.5 2em;
-			}
-		}
-		@media (min-width: 1025px) {
-				width: 25%;
-			}
-	}
 	@media (min-width: 1025px) {
 		font-size: 1em;
 		margin: 50px 0;
 	}
 
+}
+.offresTab__container{
+	width: 35%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 1025px) {
+		width: 25%;
+	}
+}
+.offresTab__text{
+	padding: 0.5em;
+	font-weight: 300;
+	@media (min-width: 1025px) {
+		padding: 0.5 2em;
+		}
 }

@@ -149,57 +149,54 @@
 
 .solutions__container{
 	padding: 0.5em;
-	>.solutions__stat{
-		font-size: 3em;
-		font-weight: 700; 
-		>.solutions__statNumber__left{
-			color: #e84c3d;
-		}
-		>.solutions__statNumber__right{
-			color: #fecb17;
-		}
-		>.solutions__statNumber__bot{
-			color: #518dc8;
-		}
-
-		@media (min-width: 1025px) {
-			padding: 0 1em;
-			font-size: 4em;	
-		}
+}
+.solutions__stat{
+	font-size: 3em;
+	font-weight: 700; 
+	@media (min-width: 1025px) {
+		padding: 0 1em;
+		font-size: 4em;	
 	}
 }
-#bot-desktop{
+.solutions__statNumber--left{
+	color: #e84c3d;
+}
+.solutions__statNumber--right{
+	color: #fecb17;
+}
+.solutions__statNumber--bot{
+	color: #518dc8;
+}
+.solutions__containerDesktop--bot {
 	@media (max-width: 1025px) {
 		display:none;	
 	}
 }
 
-.solutions__bot{
+.solutions__bot {
 	@media (min-width: 1025px) {
 		display:none;	
 	}
 }
-.solutions__certification{
+.solutions__certification {
 	padding: 0em 5em;
-	>.solutions__certificationLogo{
-		>img{
-			@media (min-width: 510px) {	
-				max-width: 50%;
-			}
-			@media (min-width: 1025px) {	
-				max-width: 25%;
-			}
-		}
-	}
-	>.solutions__certificationText{
-		padding: 2em;
-		font-size: 1.4em;
-		@media (min-width: 1025px) {
-			padding: 2em 10em;
-			font-size: 1.5em;
-		}
-	}
 	@media (max-width: 510px) {
 		display:none;	
+	}
+}
+.pres__imgTrusted {
+	@media (min-width: 510px) {	
+		max-width: 50%;
+	}
+	@media (min-width: 1025px) {	
+		max-width: 25%;
+	}
+}
+.solutions__certificationText {
+	padding: 2em;
+	font-size: 1.4em;
+	@media (min-width: 1025px) {
+		padding: 2em 10em;
+		font-size: 1.5em;
 	}
 }

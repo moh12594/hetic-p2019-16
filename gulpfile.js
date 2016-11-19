@@ -22,18 +22,9 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('vendor', function () {
-    return gulp.src('app/js/vendors/jquery.js')
+    return gulp.src('node_modules/jquery/dist/jquery.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/vendors'));
-});
-
-gulp.task('scss', function() {
-    return gulp.src('app/scss/style.scss')
-    .pipe(sass())
-    .pipe(postcss(processors))
-    .pipe(mincss())
-    .pipe(gulp.dest('dist/css'))
-    .pipe(sync.stream());
 });
 
 gulp.task('scss', function() {
