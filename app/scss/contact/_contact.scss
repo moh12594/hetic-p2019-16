@@ -11,15 +11,15 @@
 }
 
 .contact__formSubmit{
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 40px;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    background-color: #2196f3;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	background-color: #2196f3;
 
-    @media (min-width: 700px) {
+	@media (min-width: 700px) {
 		align-self: flex-start;
 		margin-left: 14vh;
 	}
@@ -40,12 +40,12 @@
 
 .contact__formInput input, textarea{
 	text-align: center;
-    height: 25px;
-    width: 80%;
-    background-color: #b5b5b5;
-  	color: black;
-    font-weight: bold;
-    border: 0;
+	height: 25px;
+	width: 80%;
+	background-color: #b5b5b5;
+	color: black;
+	font-weight: bold;
+	border: 0;
 }
 
 .contact__formInput label{
