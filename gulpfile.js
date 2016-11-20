@@ -14,17 +14,16 @@ autoprefixer
 ];
 
 gulp.task('scripts', function() {
-    return gulp.src('app/js/*.js')
+    var scriptsrc = [
+        'node_modules/jquery/dist/jquery.js',
+        'app/js/*.js'
+    ]
+
+    return gulp.src(scriptsrc)
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     .pipe(sync.stream());
-});
-
-gulp.task('vendor', function () {
-    return gulp.src('node_modules/jquery/dist/jquery.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/vendors'));
 });
 
 gulp.task('scss', function() {
@@ -59,7 +58,7 @@ gulp.task('hbs', function () {
         .pipe(sync.stream());
 });
 
-gulp.task('sync', ['vendor', 'scripts', 'scss', 'hbs', 'fonts', 'img'], function(){
+gulp.task('sync', ['scripts', 'scss', 'hbs', 'fonts', 'img'], function(){
 	sync.init({
 		server:'./dist'
 	})
