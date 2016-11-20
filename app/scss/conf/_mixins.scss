@@ -28,3 +28,9 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+@mixin verticalyCentered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

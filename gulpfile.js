@@ -63,7 +63,7 @@ gulp.task('sync', ['vendor', 'scripts', 'scss', 'hbs', 'fonts', 'img'], function
 	sync.init({
 		server:'./dist'
 	})
-	gulp.watch("app/scss/*.scss", ['scss']);
+	gulp.watch("app/scss/**/*.scss", ['scss']);
     gulp.watch("app/js/*.js", ['scripts']);
     gulp.watch("app/views/**/*.hbs", ['hbs']);
     gulp.watch("app/img/**", ['img']);
