@@ -30,6 +30,10 @@
 		align-self: flex-start;
 	}
 }
+button.contact__formSubmit:hover{
+	background-color: $blueColor2;
+	cursor: pointer;
+}
 
 .contact__formInput{
 	@include verticalyCentered;
