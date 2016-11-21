@@ -1,6 +1,5 @@
-{{> head }}
-{{> header-cc }}
 <section class="contact">
+<h1 class="contact__title">Contactez-nous</h1>
 	<div class="contact__logo">
 		<img src="img/contact-logo.jpg" />
 		<div class="contact__logoText">
@@ -8,30 +7,24 @@
 			<p>sur votre présentation de visite virtuelle Google en parrainant vos proches</p>
 		</div>
 	</div>
-	<form class="contact__form" action="">
+	<form class="contact__form" action="#">
 		<div class="contact__formInput">
-			<label for="name">Nom & prénom</label>
-			<input type="text" name="name">
+			<input type="text" name="name" placeholder="Nom*" autocomplete="on" requiered>
 		</div>
 		<div class="contact__formInput">
-			<label for="company">Société</label>
-			<input type="text" name="company">
+			<input type="text" name="company" placeholder="Société" autocomplete="off"/>
 		</div>
 		<div class="contact__formInput">
-			<label for="mail">E-mail</label>
-			<input type="text" name="mail">
+			<input type="email" name="mail" placeholder="Adresse E-mail*" autocomplete="on" required=""/>
 		</div>
 		<div class="contact__formInput">
-			<label for="phone">Téléphone</label>
-			<input type="text" name="phone">
+			<input type="tel" name="phone" placeholder="Numéro de téléphone" autocomplete="on"/>
 		</div>
 		<div class="contact__formInput">
-			<label for="message">Message</label>
-			<textarea name="message"></textarea>
+			<textarea name="message" placeholder="Message*" autocomplete="off" spellcheck="on" required/></textarea>
 		</div>
 		<div class="contact__formInput">
 			<button class="contact__formSubmit" type= "submit">Envoyer</button>
 		</div>
-	</form>	
+	</form>
 </section>
-{{> footer}}

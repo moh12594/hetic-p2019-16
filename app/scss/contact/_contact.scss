@@ -7,7 +7,14 @@
 .contact__form{
 	width: 80%;
 	margin:  30px 0;
-	@include verticalyCentered;	
+	@include verticalyCentered;
+}
+
+.contact__title{
+	text-align: center;
+	font-size: 1.3em;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .contact__formSubmit{
@@ -21,7 +28,6 @@
 
 	@media (min-width: 700px) {
 		align-self: flex-start;
-		margin-left: 14vh;
 	}
 }
 
@@ -34,26 +40,24 @@
 	@media (min-width: 700px) {
 		width: 70vh;
 		flex-direction: row;
+		justify-content: center;
 	}
-
 }
 
 .contact__formInput input, textarea{
 	text-align: center;
-	height: 25px;
+	height: 30px;
 	width: 80%;
-	background-color: #b5b5b5;
+	background-color: #f2f2f2;
 	color: black;
 	font-weight: bold;
 	border: 0;
+	outline: none;
 }
-
-.contact__formInput label{
-	color: #737373;
-	@media (min-width: 700px) {
-		width: 15vh;
-	}
-}
+.contact__formInput input:focus::-webkit-input-placeholder { color:transparent; }
+.contact__formInput input:focus:-moz-placeholder { color:transparent; }
+.contact__formInput textarea:focus::-webkit-input-placeholder { color:transparent; }
+.contact__formInput textarea:focus:-moz-placeholder { color:transparent; }
 
 .contact__formInput textarea{
 	height: 50px;
