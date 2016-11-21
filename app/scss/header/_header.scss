@@ -73,9 +73,12 @@
 		font-size: 1.5em;
 	}
 	@media (min-width: 1025px) {
-		font-size: 2em;	
+		font-size: 2em;
 	}
 }
 .header__presentationButton {
 	@include button;
+}
+a.header__presentationButton:hover {
+	background-color: $blueColor2;
 }

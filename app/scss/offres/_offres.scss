@@ -41,7 +41,7 @@
 .offres__icon{
 	width: 103px;
 	height: 103px;
-		
+
 }
 .offres__buttonLink{
 	display: block;
@@ -64,6 +64,9 @@
 		font-size: 1em;
 		width: 15%;
 	}
+}
+a.offres__buttonLink:hover {
+	background-color: $blueColor2;
 }
 
 //Tablette specific

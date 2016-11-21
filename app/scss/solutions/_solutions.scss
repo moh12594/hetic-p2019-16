@@ -11,7 +11,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__stat {
@@ -61,7 +61,7 @@
 	padding-top: 30px;
 	padding-bottom: 15px;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__certifLogo {
@@ -72,7 +72,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__prix {
@@ -86,7 +86,7 @@
 	border-bottom: 1px #333 solid;
 	@media (min-width: 510px) {
 		margin-top: 0;
-		font-size: 1em;	
+		font-size: 1em;
 	}
 	@media (min-width: 1025px) {
 		font-size: 1.5em;
@@ -109,11 +109,14 @@
 	background-color: $blueColor;
 	@media (min-width: 510px) {
 		font-size: 1em;
-		width: 35%;	
+		width: 35%;
 	}
 	@media (min-width: 1025px) {
 		width: 15%;
 	}
+}
+a.solutions__buttonLink:hover {
+	background-color: $blueColor2;
 }
 
 //Tablette specific
@@ -126,7 +129,7 @@
 	display: flex;
 	flex-direction: column;
 	@media (max-width: 510px) {
-		display:none;	
+		display:none;
 	}
 	@media (min-width: 1025px) {
 		flex-direction: row;
@@ -152,10 +155,10 @@
 }
 .solutions__stat{
 	font-size: 3em;
-	font-weight: 700; 
+	font-weight: 700;
 	@media (min-width: 1025px) {
 		padding: 0 1em;
-		font-size: 4em;	
+		font-size: 4em;
 	}
 }
 .solutions__statNumber--left{
@@ -169,26 +172,26 @@
 }
 .solutions__containerDesktop--bot {
 	@media (max-width: 1025px) {
-		display:none;	
+		display:none;
 	}
 }
 
 .solutions__bot {
 	@media (min-width: 1025px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__certification {
 	padding: 0em 5em;
 	@media (max-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .pres__imgTrusted {
-	@media (min-width: 510px) {	
+	@media (min-width: 510px) {
 		max-width: 50%;
 	}
-	@media (min-width: 1025px) {	
+	@media (min-width: 1025px) {
 		max-width: 25%;
 	}
 }
