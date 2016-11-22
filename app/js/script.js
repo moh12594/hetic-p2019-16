@@ -1,3 +1,16 @@
+$(document).ready(function(){
+  $('a[href^=\\#]').click(function(){
+    ancre=$(this).attr('href');
+   if ($(ancre).length>=1) {
+    height=$(ancre).offset().top;
+   }
+   else {
+    height=$("a[name="+ancre.substr(1,cible.length-1)+"]").offset().top;
+    }
+    $('html,body').animate({scrollTop:height},1000);
+    return false;
+});
+});
 /****
 VR
 ***/
