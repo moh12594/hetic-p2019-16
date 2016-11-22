@@ -96,27 +96,10 @@
 	color: $orangeColor;
 }
 .solutions__buttonLink {
-	display: block;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 8px;
-	color: #fff;
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
-	@media (min-width: 510px) {
-		font-size: 1em;
-		width: 35%;
+	@media (max-width: 510px) {
+	width: 60% !important;
 	}
-	@media (min-width: 1025px) {
-		width: 15%;
-	}
-}
-a.solutions__buttonLink:hover {
-	background-color: $blueColor2;
+	@include button;
 }
 
 //Tablette specific

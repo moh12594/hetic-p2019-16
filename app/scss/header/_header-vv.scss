@@ -23,17 +23,23 @@
 		background-repeat: no-repeat;
 	}
 }
+.header__backHome {
+	color: #fff;
+	font-size: 2em;
+	margin-top: 10px;
+	margin-left: 25px;
+}
 .header__visiteContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 7%;
+	margin-top: 3%;
 	text-align: center;
 	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		margin-top: 100px;
+		margin-top: 75px;
 	}
 }
 .header__visiteLogoSmall {

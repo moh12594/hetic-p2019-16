@@ -11,6 +11,10 @@
 	margin-top: 25px;
 	margin-bottom: 30px;
 	background-color: $blueColor;
+    transition: background-color 1s ease;
+	&:hover {
+		background-color: $blueColor2;
+	}
 	@media (min-width: 510px) {
 	}
 	@media (min-width: 1025px) {

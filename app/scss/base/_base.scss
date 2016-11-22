@@ -1,4 +1,4 @@
-html, body, ul, p, h1, p{
+html, body, ul, p, h1, p {
 	height: 100%;
 	width: 100%;
     margin: 0;
@@ -10,6 +10,10 @@ html, body, ul, p, h1, p{
     vertical-align: baseline;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 ul {
     list-style: none;
 }

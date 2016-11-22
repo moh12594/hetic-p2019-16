@@ -79,6 +79,3 @@
 .header__presentationButton {
 	@include button;
 }
-a.header__presentationButton:hover {
-	background-color: $blueColor2;
-}

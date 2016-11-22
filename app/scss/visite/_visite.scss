@@ -26,6 +26,7 @@
 }
 .visite__visiteGallery--medium {
 	@include visiteGallery;
+	width: 95%;
 	@media (max-width: 684px) {
 		display: none;
 	}

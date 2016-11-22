@@ -44,29 +44,7 @@
 
 }
 .offres__buttonLink{
-	display: block;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 8px;
-	color: #fff;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
-	@media (min-width: 510px) {
-		text-align: center;
-		width: 35%;
-	}
-	@media (min-width: 1025px) {
-		font-weight: 400;
-		font-size: 1em;
-		width: 15%;
-	}
-}
-a.offres__buttonLink:hover {
-	background-color: $blueColor2;
+	@include button;
 }
 
 //Tablette specific
