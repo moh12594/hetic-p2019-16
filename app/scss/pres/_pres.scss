@@ -53,25 +53,15 @@
 			height: 500px;
 		}
 	}
-	@media (min-width: 900px) {
-		display: none;
+	@media (min-width: 1025px) {
+		height: 600px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		iframe{
+			height: 600px;
+		}
 	}
-}
-.pres__presentationPanorama {
-	display: none;
-	background: url(../../app/img/pano_small.jpg)repeat-x;
-	background-size: contain;
-	min-height: 300px;
-	max-height: 300px;
-	margin-top: 35px;
-
-	@media (min-width: 900px) {
-		display: block;
-	}
-}
-.pres__presentationLogo {
-	padding-top: 105px;
-	opacity: 0.8;
 }
 .pres__buttonLink {
 	@include button;
