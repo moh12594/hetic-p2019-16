@@ -47,45 +47,25 @@
 	width: 100%;
 	height: 300px;
 	border: none;
-	@media (min-width: 900px) {
-		display: none;
-	}
-}
-.pres__presentationPanorama {
-	display: none;
-	background: url(../../app/img/pano_small.jpg)repeat-x;
-	background-size: contain;
-	min-height: 300px;
-	max-height: 300px;
-	margin-top: 35px;
-
-	@media (min-width: 900px) {
-		display: block;
-	}
-}
-.pres__presentationLogo {
-	padding-top: 105px;
-	opacity: 0.8;
-}
-.pres__buttonLink {
-	display: block;
-	text-decoration: none;
-	padding: 10px 40px;
-	border-radius: 8px;
-	color: #fff;
-	width: 25%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
 	@media (min-width: 510px) {
-
+		height: 500px;
+		iframe{
+			height: 500px;
+		}
 	}
 	@media (min-width: 1025px) {
-		padding: 10px 40px;
-		font-weight: 400;
-		font-size: 1em;
-		width: 15%;
+		height: 600px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		iframe{
+			height: 600px;
+		}
+	}
+}
+.pres__buttonLink {
+	@include button;
+	@media (min-width: 1025px) {
+		margin-top: 5%;
 	}
 }

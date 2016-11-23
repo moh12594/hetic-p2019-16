@@ -14,8 +14,6 @@
 
 // Home Header
 @import 'header/header';
-@import 'header/menuicon';
-@import 'header/menu';
 
 // Visite Header
 @import 'header/header-vv';
@@ -31,6 +29,9 @@
 
 // Visite-virtuelle Content
 @import 'visite/visite';
+
+// Contact
+@import 'contact/contact';
 
 //Footer
 @import 'footer/footer';

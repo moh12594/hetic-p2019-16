@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+var gulp = require('gulp');
     sass = require('gulp-sass');
     sync = require('browser-sync').create();
     postcss = require('gulp-postcss');
@@ -14,25 +14,15 @@ autoprefixer
 ];
 
 gulp.task('scripts', function() {
-    return gulp.src('app/js/*.js')
+    var scriptsrc = [
+        'node_modules/jquery/dist/jquery.js',
+        'app/js/*.js'
+    ]
+
+    return gulp.src(scriptsrc)
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
-    .pipe(sync.stream());
-});
-
-gulp.task('vendor', function () {
-    return gulp.src('app/js/vendors/jquery.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/vendors'));
-});
-
-gulp.task('scss', function() {
-    return gulp.src('app/scss/style.scss')
-    .pipe(sass())
-    .pipe(postcss(processors))
-    .pipe(mincss())
-    .pipe(gulp.dest('dist/css'))
     .pipe(sync.stream());
 });
 
@@ -68,11 +58,11 @@ gulp.task('hbs', function () {
         .pipe(sync.stream());
 });
 
-gulp.task('sync', ['vendor', 'scripts', 'scss', 'hbs', 'fonts', 'img'], function(){
+gulp.task('sync', ['scripts', 'scss', 'hbs', 'fonts', 'img'], function(){
 	sync.init({
 		server:'./dist'
 	})
-	gulp.watch("app/scss/*.scss", ['scss']);
+	gulp.watch("app/scss/**/*.scss", ['scss']);
     gulp.watch("app/js/*.js", ['scripts']);
     gulp.watch("app/views/**/*.hbs", ['hbs']);
     gulp.watch("app/img/**", ['img']);

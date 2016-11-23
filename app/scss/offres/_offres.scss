@@ -8,7 +8,7 @@
 .offres__title{
 	text-align: center;
 	font-size: 20px;
-	color: #3f4044;
+	color: $titleColor;
 	@media (min-width: 510px) {
 		margin-top: 80px;
 		font-size: 1.8em;
@@ -24,7 +24,7 @@
 	justify-content: space-around;
 	margin-top: 45px;
 	width: 85%;
-	color: #3f4044;
+	color: $titleColor;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -41,29 +41,10 @@
 .offres__icon{
 	width: 103px;
 	height: 103px;
-		
+
 }
 .offres__buttonLink{
-	display: block;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 8px;
-	color: #fff;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
-	@media (min-width: 510px) {
-		text-align: center;
-		width: 35%;
-	}
-	@media (min-width: 1025px) {
-		font-weight: 400;
-		font-size: 1em;
-		width: 15%;
-	}
+	@include button;
 }
 
 //Tablette specific
@@ -81,26 +62,25 @@
 	font-size: 1em;
 	display: flex;
 	justify-content: center;
-	>.offresTab__container{
-		width: 35%;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-
-		>.offresTab__text{
-			padding: 0.5em;
-			font-weight: 300;
-			@media (min-width: 1025px) {
-				padding: 0.5 2em;
-			}
-		}
-		@media (min-width: 1025px) {
-				width: 25%;
-			}
-	}
 	@media (min-width: 1025px) {
 		font-size: 1em;
 		margin: 50px 0;
 	}
 
+}
+.offresTab__container{
+	width: 35%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 1025px) {
+		width: 25%;
+	}
+}
+.offresTab__text{
+	padding: 0.5em;
+	font-weight: 300;
+	@media (min-width: 1025px) {
+		padding: 0.5 2em;
+		}
 }

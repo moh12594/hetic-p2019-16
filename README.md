@@ -29,14 +29,18 @@ $ git commit -am "[Scope] Description"
 $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 $ npm install
+$ gulp sync
 ```
-## Known issue on the web
+## Known issue
 
 * 360° images will have incorrect orientation in iOS Safari
+
+## List of device tested and running
+
+* HTC ONE A9 (Chrome 54.0.2840.85)
 
 ## Build With
 
 * [Gulp](https://github.com/gulpjs/gulp) - Automate and enhance your workflow
 * [SASS](https://github.com/sass/sass) - Adds power and elegance to CSS
 * [VR view](https://developers.google.com/vr/concepts/vrview) - Embed 360 degree VR media
-* [Compass](https://github.com/Compass/compass) - Framework for [SASS](https://github.com/sass/sass)

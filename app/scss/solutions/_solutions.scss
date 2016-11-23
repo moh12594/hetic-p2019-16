@@ -11,7 +11,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__stat {
@@ -61,7 +61,7 @@
 	padding-top: 30px;
 	padding-bottom: 15px;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__certifLogo {
@@ -72,7 +72,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		display:none;	
+		display:none;
 	}
 }
 .solutions__prix {
@@ -86,7 +86,7 @@
 	border-bottom: 1px #333 solid;
 	@media (min-width: 510px) {
 		margin-top: 0;
-		font-size: 1em;	
+		font-size: 1em;
 	}
 	@media (min-width: 1025px) {
 		font-size: 1.5em;
@@ -94,26 +94,13 @@
 }
 .solutions__prixSomme {
 	color: $orangeColor;
+	font-size: 30px;
 }
 .solutions__buttonLink {
-	display: block;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 8px;
-	color: #fff;
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 25px;
-	margin-bottom: 30px;
-	background-color: $blueColor;
-	@media (min-width: 510px) {
-		font-size: 1em;
-		width: 35%;	
+	@media (max-width: 510px) {
+	width: 60% !important;
 	}
-	@media (min-width: 1025px) {
-		width: 15%;
-	}
+	@include button;
 }
 
 //Tablette specific
@@ -126,7 +113,7 @@
 	display: flex;
 	flex-direction: column;
 	@media (max-width: 510px) {
-		display:none;	
+		display:none;
 	}
 	@media (min-width: 1025px) {
 		flex-direction: row;
@@ -140,6 +127,7 @@
 	display: flex;
 }
 .solutions__title{
+	color: $titleColor;
 	margin-top: 2em;
 	font-size: 2em;
 	@media (max-width: 1025px) {
@@ -149,57 +137,55 @@
 
 .solutions__container{
 	padding: 0.5em;
-	>.solutions__stat{
-		font-size: 3em;
-		font-weight: 700; 
-		>.solutions__statNumber__left{
-			color: #e84c3d;
-		}
-		>.solutions__statNumber__right{
-			color: #fecb17;
-		}
-		>.solutions__statNumber__bot{
-			color: #518dc8;
-		}
-
-		@media (min-width: 1025px) {
-			padding: 0 1em;
-			font-size: 4em;	
-		}
-	}
 }
-#bot-desktop{
-	@media (max-width: 1025px) {
-		display:none;	
-	}
-}
-
-.solutions__bot{
+.solutions__stat{
+	font-size: 3em;
+	font-weight: 700;
 	@media (min-width: 1025px) {
-		display:none;	
+		padding: 0 1em;
+		font-size: 4em;
 	}
 }
-.solutions__certification{
+.solutions__statNumber--left{
+	color: #e84c3d;
+}
+.solutions__statNumber--right{
+	color: #fecb17;
+}
+.solutions__statNumber--bot{
+	color: #518dc8;
+}
+.solutions__containerDesktop--bot {
+	@media (max-width: 1025px) {
+		display:none;
+	}
+}
+
+.solutions__bot {
+	@media (min-width: 1025px) {
+		display:none;
+	}
+}
+.solutions__certification {
 	padding: 0em 5em;
-	>.solutions__certificationLogo{
-		>img{
-			@media (min-width: 510px) {	
-				max-width: 50%;
-			}
-			@media (min-width: 1025px) {	
-				max-width: 25%;
-			}
-		}
-	}
-	>.solutions__certificationText{
-		padding: 2em;
-		font-size: 1.4em;
-		@media (min-width: 1025px) {
-			padding: 2em 10em;
-			font-size: 1.5em;
-		}
-	}
 	@media (max-width: 510px) {
-		display:none;	
+		display:none;
+	}
+}
+.pres__imgTrusted {
+	@media (min-width: 510px) {
+		max-width: 50%;
+	}
+	@media (min-width: 1025px) {
+		max-width: 25%;
+	}
+}
+.solutions__certificationText {
+	color: $titleColor;
+	padding: 2em;
+	font-size: 1.4em;
+	@media (min-width: 1025px) {
+		padding: 2em 10em;
+		font-size: 1.5em;
 	}
 }
