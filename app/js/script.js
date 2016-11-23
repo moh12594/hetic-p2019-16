@@ -27,6 +27,18 @@ var scenes = {
 				},
 		}
 	}
+	cafet: {
+		image: 'https://mohsadat.com/devprojet/img/cafet.jpg',
+		preview : 'https://mohsadat.com/devprojet/img/cafet.jpg',
+		hotspots: {
+			salle14: {
+					pitch: 0,
+					yaw: -100,
+					radius: 0.05,
+					distance: 1
+				},
+		}
+	}
 };
 function onVrViewLoad() {
 	vrView = new VRView.Player('#vrview', {
