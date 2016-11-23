@@ -29,10 +29,15 @@ $ git commit -am "[Scope] Description"
 $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
 $ npm install
+$ gulp sync
 ```
 ## Known issue
 
 * 360° images will have incorrect orientation in iOS Safari
+
+## List of device tested and running
+
+* HTC ONE A9 (Chrome 54.0.2840.85)
 
 ## Build With
 
