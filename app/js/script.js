@@ -21,11 +21,11 @@ var scenes = {
 		preview : 'https://mohsadat.com/devprojet/img/vrhetic-converted.jpg',
 		hotspots: {
 			couloir: {
-	        pitch: 0,
-	        yaw: -93,
-	        radius: 0.05,
-	        distance: 1
-	      },
+				pitch: 0,
+				yaw: -93,
+				radius: 0.05,
+				distance: 1
+	      		},
 		}
 	},
 	couloir: {
@@ -33,25 +33,13 @@ var scenes = {
 		preview : 'https://mohsadat.com/devprojet/img/couloir.jpg',
 		hotspots: {
 			salle14: {
-					pitch: 0,
-					yaw: -100,
-					radius: 0.05,
-					distance: 1
-				},
+				pitch: 0,
+				yaw: -100,
+				radius: 0.05,
+				distance: 1
+			},
 		}
 	},
-	cafet: {
-		image: 'https://mohsadat.com/devprojet/img/cafet.jpg',
-		preview : 'https://mohsadat.com/devprojet/img/cafet.jpg',
-		hotspots: {
-			salle14: {
-					pitch: 0,
-					yaw: -100,
-					radius: 0.05,
-					distance: 1
-				},
-		}
-	}
 };
 function onVrViewLoad() {
 	vrView = new VRView.Player('#vrview', {
