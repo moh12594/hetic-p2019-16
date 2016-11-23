@@ -32,6 +32,8 @@
 	margin-left: auto;
 }
 .header__presentationContainer {
+	animation-duration: 2s;
+  	animation-name: fadeInFromright;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
