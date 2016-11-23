@@ -39,7 +39,7 @@ var scenes = {
 					distance: 1
 				},
 		}
-	}
+	},
 	cafet: {
 		image: 'https://mohsadat.com/devprojet/img/cafet.jpg',
 		preview : 'https://mohsadat.com/devprojet/img/cafet.jpg',
