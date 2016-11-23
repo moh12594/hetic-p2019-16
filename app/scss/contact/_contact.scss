@@ -12,9 +12,16 @@
 
 .contact__title{
 	text-align: center;
-	font-size: 1.3em;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	font-size: 20px;
+	color: $titleColor;
+	@media (min-width: 510px) {
+		font-size: 1.8em;
+	}
+	@media (min-width: 1025px) {
+		margin-bottom: 1em;
+		font-weight: bold;
+		font-size: 2em;
+	}
 }
 
 .contact__formSubmit{
