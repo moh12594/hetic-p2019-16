@@ -1,0 +1,71 @@
+.pres {
+	font-family: 'Roboto';
+	color: #333;
+	text-align: center;
+	font-weight: 300;
+}
+.pres__presentationContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 	25px;
+	text-align: center;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	@media (min-width: 510px) {
+		width: 50%;
+	}
+	@media (min-width: 1025px) {
+		margin-top: 25px;
+		width: 80%;
+	}
+}
+.pres__imgTrusted {
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	@media (min-width: 1025px) {
+		width: 35%;
+	}
+}
+.pres__text {
+	margin-top: 25px;
+	font-size: 1em;
+	font-weight: 300;
+	@media (min-width: 510px) {
+		font-size: 1.5em;
+	}
+	@media (min-width: 1025px) {
+		margin-top: 50px;
+		font-size: 1.5em;
+	}
+
+}
+.pres__presentationVr {
+	width: 100%;
+	height: 300px;
+	border: none;
+	@media (min-width: 510px) {
+		height: 500px;
+		iframe{
+			height: 500px;
+		}
+	}
+	@media (min-width: 1025px) {
+		height: 600px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		iframe{
+			height: 600px;
+		}
+	}
+}
+.pres__buttonLink {
+	@include button;
+	@media (min-width: 1025px) {
+		margin-top: 5%;
+	}
+}

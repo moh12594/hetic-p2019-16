@@ -1,0 +1,51 @@
+.footer {
+	font-family: Roboto;
+	text-align: center;
+	background-color: #757575;
+	padding-bottom: 5px;
+}
+.footer__socialNetwork {
+	padding-top: 20px;
+}
+
+.footer__socialNetworkList {
+	display: inline-block;
+	font-size: 2em;
+	margin-left: 25px;
+	&:first-child {
+		margin-left: 0;
+	}
+	@media (min-width: 510px) {
+		font-size: 3.5em;
+	}
+	@media (min-width: 1025px) {
+		font-size: 2em;
+	}
+}
+.footer__socialNetworkItem {
+	color: #fff;
+	font-size: 2em;
+	transition: color 1s ease;
+}
+.footer__copyright {
+	margin-top: 15px;
+	color: #fff;
+	@media (min-width: 510px) {
+		font-size: 1.5em;
+	}
+	@media (min-width: 1025px) {
+		font-size: 1em;
+	}
+}
+.fa-twitter-square:hover {
+	color: #00ACED;
+}
+.fa-facebook-square:hover {
+	color:#3b5998;
+}
+.fa-linkedin-square:hover {
+	color:#0077B5;
+}
+.fa-google-plus-square:hover {
+	color:#d34836;
+}

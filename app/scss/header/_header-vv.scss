@@ -1,15 +1,15 @@
-.header {
+.header--visit {
 	font-family: 'Roboto';
 	display: flex;
 	flex-direction: column;
 	height: auto;
-	background: url(../../app/img/home_small.jpg);
+	background: url(../img/header_vv_small.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 300px;
-	max-height: 300px;
+	min-height: 200px;
+	max-height: 200px;
 	@media (min-width: 510px) {
-		background: url(../../app/img/home_medium.jpg);
+		background: url(../img/header_vv_medium.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		min-height: 486px;
@@ -17,36 +17,38 @@
 
 	}
 	@media (min-width: 1025px) {
-		background: url(../../app/img/vv-full1.jpg);
+		background: url(../img/header_vv_large.jpg);
 		background-position: fixed;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 }
-.not-display {
-	display: none;
+.header__backHome {
+	width: 35px;
+	height: 35px;
+	margin-top: 10px;
+	margin-left: 25px;
 }
-.header__mobileMenuContainer {
-	width: 95%;
-	margin-right: auto;
-	margin-left: auto;
+.header__backHomeImage {
+	max-width: 100%;
+	max-height: 100%;
 }
-.header__presentationContainer {
+.header__visiteContainer {
 	animation-duration: 2s;
   	animation-name: fadeInFromright;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 20%;
+	margin-top: 3%;
 	text-align: center;
 	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 	@media (min-width: 510px) {
-		margin-top: 100px;
+		margin-top: 75px;
 	}
 }
-.header__presentationLogoSmall {
+.header__visiteLogoSmall {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 250px;
@@ -54,7 +56,7 @@
 		display: none;
 	}
 }
-.header__presentationLogoMedium {
+.header__visiteLogoMedium {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 500px;
@@ -68,16 +70,37 @@
 		height: auto;
 	}
 }
-.header__presentationTitle {
+.header__visiteTitle {
 	color: #fff;
 	font-size: 1.3em;
 	@media (min-width: 510px) {
 		font-size: 1.5em;
 	}
 	@media (min-width: 1025px) {
-		font-size: 2em;
+		font-size: 2em;	
 	}
 }
-.header__presentationButton {
-	@include button;
+.header__visiteButton {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	color: #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor;
+	@media (min-width: 510px) {
+
+	}
+	@media (min-width: 1025px) {
+		margin-top: 10%;
+		padding: 10px 40px;
+		font-weight: 400;
+		font-size: 1em;
+		width: 15%;
+	}
 }

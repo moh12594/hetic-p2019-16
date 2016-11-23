@@ -1,5 +1,9 @@
 # hetic-p2019-16
+<<<<<<< HEAD
 Front-End Development Project
+=======
+Front-End Development Project available [here](http://mohsadat.com/devprojet/)
+>>>>>>> 8793d652f7cdbc638f93cb0980d0e43c1fd3399a
 
 ## Authors
 
@@ -13,21 +17,34 @@ Front-End Development Project
 ## Commit Style
 
 ```
-$ git commit -am "[Filename] Description"
+$ git commit -am "[Scope] Description"
 ```
+
+## Prerequisites
+
+* Modern versions of Chrome on Windows, OSX, Linux, Android, and iOS.
+* Modern versions of Safari on OSX and iOS.
+* Modern versions of Firefox on Windows, OSX, and Linux.
+* Modern versions of IE 11 and Edge on Windows.
+
 ## Getting started
 
 ```
 $ git clone https://github.com/P-Henoch/hetic-p2019-16.git
 $ cd hetic-p2019-16
+$ npm install
+$ gulp sync
 ```
+## Known issue
 
-### Coding style
+* 360° images will have incorrect orientation in iOS Safari
 
-The JavaScript ES6 code style is based on [Airbnb's style guide](https://github.com/airbnb/javascript)
+## List of device tested and running
+
+* HTC ONE A9 (Chrome 54.0.2840.85)
 
 ## Build With
 
 * [Gulp](https://github.com/gulpjs/gulp) - Automate and enhance your workflow
 * [SASS](https://github.com/sass/sass) - Adds power and elegance to CSS
-* [Compass](https://github.com/Compass/compass) - Framework for [SASS](https://github.com/sass/sass)
+* [VR view](https://developers.google.com/vr/concepts/vrview) - Embed 360 degree VR media

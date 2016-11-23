@@ -1,0 +1,47 @@
+@mixin button {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px;
+	border-radius: 8px;
+	color: #fff;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	background-color: $blueColor3;
+    transition: background-color 1s ease;
+	&:hover {
+		background-color: $blueColor;
+	}
+	&:active {
+		transform: translate(0px, 5px);
+  		box-shadow: 0px 1px 0px 0px $blueColor2;
+	}
+	@media (min-width: 510px) {
+	}
+	@media (min-width: 1025px) {
+		margin-top: 6%;
+		padding: 10px 40px;
+		font-weight: 400;
+		font-size: 1em;
+		width: 15%;
+	}
+}
+
+@mixin visiteGallery {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display:flex;
+	justify-content: center;
+}
+
+@mixin verticalyCentered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	

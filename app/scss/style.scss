@@ -6,12 +6,32 @@
 @import 'conf/animations';
 @import 'conf/fonts';
 
+//Base
+@import 'base/base';
+
 //Global
 @import 'global/layout';
 
-//Header
+// Home Header
 @import 'header/header';
-@import 'header/menu';
+
+// Visite Header
+@import 'header/header-vv';
+
+// Pres
+@import 'pres/pres';
+
+// Solutions
+@import 'solutions/solutions';
+
+// Section offres
+@import 'offres/offres';
+
+// Visite-virtuelle Content
+@import 'visite/visite';
+
+// Contact
+@import 'contact/contact';
 
 //Footer
 @import 'footer/footer';

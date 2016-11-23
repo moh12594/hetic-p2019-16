@@ -1,0 +1,86 @@
+.offres {
+	font-family: 'Roboto';
+	text-align: center;
+	@media (min-width: 510px) {
+		display: none;
+	}
+}
+.offres__title{
+	text-align: center;
+	font-size: 20px;
+	color: $titleColor;
+	@media (min-width: 510px) {
+		margin-top: 80px;
+		font-size: 1.8em;
+	}
+	@media (min-width: 1025px) {
+		margin-top: 2em;
+		font-weight: bold;
+		font-size: 2em;
+	}
+}
+.offres_container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 45px;
+	width: 85%;
+	color: $titleColor;
+	margin-left: auto;
+	margin-right: auto;
+}
+.offres__text {
+	margin-left: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.offres__text-left {
+	margin-right: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.offres__icon{
+	width: 103px;
+	height: 103px;
+
+}
+.offres__buttonLink{
+	@include button;
+}
+
+//Tablette specific
+
+.offresTab{
+	margin: 80px 0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	@media (max-width: 510px) {
+		display: none;
+	}
+}
+.offresTab__vignette{
+	margin: 100px 0;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	@media (min-width: 1025px) {
+		font-size: 1em;
+		margin: 50px 0;
+	}
+
+}
+.offresTab__container{
+	width: 35%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 1025px) {
+		width: 25%;
+	}
+}
+.offresTab__text{
+	padding: 0.5em;
+	font-weight: 300;
+	@media (min-width: 1025px) {
+		padding: 0.5 2em;
+		}
+}
