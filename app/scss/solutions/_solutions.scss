@@ -94,6 +94,7 @@
 }
 .solutions__prixSomme {
 	color: $orangeColor;
+	font-size: 30px;
 }
 .solutions__buttonLink {
 	@media (max-width: 510px) {
@@ -180,6 +181,7 @@
 	}
 }
 .solutions__certificationText {
+	color: $titleColor;
 	padding: 2em;
 	font-size: 1.4em;
 	@media (min-width: 1025px) {
