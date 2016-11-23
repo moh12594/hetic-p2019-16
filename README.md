@@ -1,9 +1,7 @@
 # hetic-p2019-16
-<<<<<<< HEAD
-Front-End Development Project
-=======
+
 Front-End Development Project available [here](http://mohsadat.com/devprojet/)
->>>>>>> 8793d652f7cdbc638f93cb0980d0e43c1fd3399a
+
 
 ## Authors
 
