@@ -104,7 +104,9 @@ VR End
 /* Script changement de visite*/
 
 function getVisit(currentVisit) {
-	var vvvv = document.getElementById(currentVisit);
-	var link = vvvv.dataset.visiteLink;
+	var selectedVisit = document.getElementById(currentVisit);
+	var link = selectedVisit.dataset.visiteLink;
+	var visitName = selectedVisit.dataset.visitName;
+	document.getElementById("visitname").innerHTML = visitName;
  	document.getElementById("vPrincipale").src = link;
  }

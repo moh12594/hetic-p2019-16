@@ -24,10 +24,14 @@
 	}
 }
 .header__backHome {
-	color: #fff;
-	font-size: 2em;
+	width: 35px;
+	height: 35px;
 	margin-top: 10px;
 	margin-left: 25px;
+}
+.header__backHomeImage {
+	max-width: 100%;
+	max-height: 100%;
 }
 .header__visiteContainer {
 	animation-duration: 2s;

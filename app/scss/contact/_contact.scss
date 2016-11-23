@@ -18,6 +18,7 @@
 }
 
 .contact__formSubmit{
+	font-family: 'Roboto';
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 40px;
@@ -30,7 +31,7 @@
 		align-self: flex-start;
 	}
 }
-button.contact__formSubmit:hover{
+.contact__formSubmit:hover{
 	background-color: $blueColor2;
 	cursor: pointer;
 }
@@ -48,7 +49,7 @@ button.contact__formSubmit:hover{
 	}
 }
 
-.contact__formInput input, textarea{
+.contact__formInput--input, .contact__formInput--textarea {
 	text-align: center;
 	height: 30px;
 	width: 80%;
@@ -58,12 +59,12 @@ button.contact__formSubmit:hover{
 	border: 0;
 	outline: none;
 }
-.contact__formInput input:focus::-webkit-input-placeholder { color:transparent; }
-.contact__formInput input:focus:-moz-placeholder { color:transparent; }
-.contact__formInput textarea:focus::-webkit-input-placeholder { color:transparent; }
-.contact__formInput textarea:focus:-moz-placeholder { color:transparent; }
+.contact__formInput--input:focus::-webkit-input-placeholder { color:transparent; }
+.contact__formInput--input:focus:-moz-placeholder { color:transparent; }
+.contact__formInput--textarea:focus::-webkit-input-placeholder { color:transparent; }
+.contact__formInput--textarea:focus:-moz-placeholder { color:transparent; }
 
-.contact__formInput textarea{
+.contact__formInput--textarea {
 	height: 50px;
 }
 
@@ -75,7 +76,7 @@ button.contact__formSubmit:hover{
 	height: 80px;
 }
 
-.contact__logo img{
+.contact__logoImage {
 	height: 80px;
 }
 
@@ -87,13 +88,13 @@ button.contact__formSubmit:hover{
 	@include verticalyCentered;
 }
 
-.contact__logoText h1{
+.contact__logoText--price{
 	font-weight: 600;
 	height: auto;
-	font-size: 0.8em;
+	font-size: 15px;
 }
 
-.contact__logoText p{
+.contact__logoText--text{
 	height: auto;
-	font-size: 0.6em;
+	font-size: 12px;
 }
